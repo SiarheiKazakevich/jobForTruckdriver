@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswald/Oswald/Oswald-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/oswald/Roboto/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/mulish/Mulish-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+html {
+  scroll-behavior: smooth;
+  /*overflow-y: scroll;*/
+}
+
+a {
+  color: inherit;
+  /* или любой другой цвет */
+  text-decoration: none;
+  /* убирает подчёркивание */
+}
+
+.mainwraper {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+/*--------------header-----------------*/
+.header {
+  background-color: #222222;
+  width: 100%;
+  max-width: 1440px;
+  height: 60px;
+  /*border: 1px solid #FFFFFF;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logobox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*border: 1px solid white;*/
+  margin: 0px 0px 0px 8px;
+}
+
+.logo {
+  background-image: url('../assets/icons/icon12.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin: 0px 0px 0px 0px;
+}
+
+.textlogo {
+  width: 100%;
+  /*height: 8px;
+  line-height: 24px;*/
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 8px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.burgermenu {
+  display: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 3px;
+}
+
+.burgermenu input {
+  display: none;
+}
+
+.linesizeburgermenu1 {
+  width: 12px;
+  height: 2px;
+  border: solid 1px #FFFFFF;
+  margin: 0px 0px 0px 0px;
+  transition: 0.4s ease;
+}
+
+.linesizeburgermenu2 {
+  width: 20px;
+  height: 2px;
+  border: solid 1px #FFFFFF;
+  margin: 0px 0px 0px 0px;
+  transition: 0.4s ease;
+}
+
+.navbox {
+  width: 100%;
+  max-width: 446px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  /*border: 1px solid white;*/
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.navbox a {
+  color: inherit;
+  /* унаследует цвет родителя или задай свой, например: black */
+  text-decoration: none;
+  /* убирает подчёркивание */
+  transition: color 0.3s;
+  /* плавный переход цвета */
+  cursor: pointer;
+  /* курсор в виде руки */
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.navbox a:hover {
+  color: #fdcccc;
+  /* любой цвет при наведении, например: коричневый */
+  text-decoration: none;
+  /* если хочешь возвращать подчёркивание */
+  transform: scale(1.1);
+}
+
+.nav-list {
+  width: 100%;
+  max-width: 446px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  /*border: 1px solid white;*/
+}
+
+.menunavbox {
+  display: none;
+}
+
+/*--------------next section-----------------*/

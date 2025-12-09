@@ -4,11 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="./styles/style.css" rel="stylesheet" type="text/css">
+  <link href="./styles/style768.css" rel="stylesheet" href="text/css">
+  <link href="./styles/styleAd.css" rel="stylesheet" href="text/css">
+  <link rel="icon" type="image/png" href="./assets/icons/icon12.jpg">
+  <title>jobForTruckdriver</title>
 </head>
 
 <body>
-
+  <div class="mainwraper">
+    <header class="header">
+      <div class="logobox">
+        <div class="logo"></div>
+        <span class="textlogo">truckdriver's job</span>
+      </div>
+      <!-- ✅ РЕКЛАМА -->
+      <div class="ad-box" id="adBox">
+        <div class="ad-slider" id="adSlider">
+          <img src="./assets/reclamePhotos/manvesta1.webp" class="ad-slide active">
+          <img src="./assets/reclamePhotos/bleiras1.webp" class="ad-slide">
+          <img src="./assets/reclamePhotos/bt1.webp" class="ad-slide">
+        </div>
+        <button class="ad-close" id="adClose">✖</button>
+      </div>
+      <nav class="navbox">
+        <ul class="nav-list">
+          <li><a href="#about">about me</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#price">price</a></li>
+          <li><a href="#faq">faq</a></li>
+          <li><a href="#contacts">contacts</a></li>
+        </ul>
+      </nav>
+      <label class="burgermenu" for="burger-toggle">
+        <input type="checkbox" id="burger-toggle" />
+        <span class="linesizeburgermenu linesizeburgermenu1"></span>
+        <span class="linesizeburgermenu linesizeburgermenu2"></span>
+      </label>
+      <!--выезжающее меню-->
+      <nav class="menunavbox">
+        <ul class="menunav-list">
+          <li><a href="#about">about me</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#price">price</a></li>
+          <li><a href="#faq">faq</a></li>
+          <li><a href="#contacts">contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
